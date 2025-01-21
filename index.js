@@ -29,6 +29,11 @@ app.get('/', (req, res) => {
     res.send("All is Well");
 });
 
+// Health API
+app.get('/health', (req, res) => {
+    res.status(200).send('OK');
+});
+
 // Use route files
 app.use('/api/notices', noticeRoutes);
 app.use('/api/students', studentRoutes);
