@@ -45,7 +45,7 @@ app.get("/health", (req, res) => {
 });
 
 // Self-Ping Mechanism to Keep Server Active
-const SELF_URL = "https://insanedcadmin.vercel.app/"; // Replace with your deployed backend URL
+const SELF_URL = "https://idc-admin-backend.vercel.app/"; // Replace with your deployed backend URL
 setInterval(() => {
     axios
         .get(`${SELF_URL}`)
